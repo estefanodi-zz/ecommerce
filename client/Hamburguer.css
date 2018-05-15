@@ -1,0 +1,49 @@
+/* CSS declarations go here */
+
+
+
+
+
+.dropHamb{
+	width:0;
+	height:0;
+	margin-left: 0;
+	position:absolute;
+
+}
+
+.burger {
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+    background: white !important;
+
+}
+.mainBurger{
+    margin-top:15px;
+    margin-left:15px;
+    display: inline-block;
+}
+
+.hamburguer{
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 500px){
+	.hamburguer{
+	    visibility: visible;
+    }
+    .navbarText{
+		visibility: hidden;
+    }
+    .dropHamb{
+		width:50%;
+		height:300px;
+		background-color: rgba(0,0,0,0.80);
+		margin-top:19%;
+		margin-left: 0;
+		position:absolute;
+		display:grid;
+	    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	}
+}

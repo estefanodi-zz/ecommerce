@@ -1,0 +1,191 @@
+ 
+
+.oneProductDetails2{
+    width:100%;
+	display :grid;
+	grid-template-rows: 2fr 2fr ;
+	color:white;
+	background-color:#209a9a;
+    height: 100%;
+}
+
+
+
+.pict2{
+	width:18%;
+	margin-left: 6%;
+	margin-bottom: 5%;
+	float:left;
+	border: 1px solid gray;
+	height:450px;
+	display :grid;
+    grid-template-rows: 5fr 2fr;
+}
+
+.productsContainer{
+	height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-rows:12% 10% 78%;
+    display:grid;
+}
+
+.productsMain{
+       /*background-color:#e6e6e6;*/
+	   width:100%;
+	   padding-top: 120px;	
+}
+
+.material-icons.md-36.white{
+	color:white;
+}
+
+.sortByContainer{
+	
+	margin-left: 5%;
+	
+	width:30%;
+	max-height: 70px;
+	
+	
+}
+
+
+
+.listContainer{
+	display : grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+	width : 90%;
+	margin : 3% 5%;
+	min-height: 500px;
+}
+
+.item{
+	font-size: 2em;
+	margin-top: 2%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.price{
+     font-size: 2em;
+     text-align: right;
+     margin-right: 3%;
+     justify-self:center;
+     align-self: center;
+}
+
+.oneProductDetailsBottom2{
+    display : grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.addToCartButton{
+   width:50%;
+   height: 40px;
+   border: none;
+   outline:none;
+   justify-self:center;
+}
+
+.addToCartButton:hover{
+	border:2px solid white;
+}
+
+.products{
+	width:100%;
+	margin-top:3%;
+	display: inline-block;
+		
+}
+
+.essentials{
+	width:100%;
+	height: 100%;
+	background-color:none;
+	z-index: 2;
+}
+
+.opacityGreen2{
+	width:40%;
+	height:60px;
+	margin: 40% 30%;
+	border:4px solid #209a9a;
+	background-color:transparent;
+	border-radius:10px; 
+	font-size: 1.8em;
+	color:#209a9a;
+	align-items: center;
+	text-align: center;
+	font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5%;
+}
+
+.drop{
+	max-height: 50px;
+	font-size: 1.2em;
+	width:200px;
+	
+	padding-left: 30%;
+}
+
+.ss-arrow-left{
+	display:none;
+}
+
+.ss-arrow-right{
+	display:none;
+}
+
+@media only screen and (max-width: 500px) {
+    
+
+    .pict2{
+		width:80%;
+		margin-left: 10%;
+		margin-top: 10%;
+		float:left;
+		height:450px;
+		display :grid;
+	    grid-template-rows: 5fr 2fr;
+
+    }
+    .sortByContainer{
+	
+		margin-left: 25%;
+		width:30%;
+		max-height: 70px;
+	}
+
+	.opacityGreen2{
+		width:40%;
+		height:60px;
+		margin: 40% 30%;
+		border:4px solid #209a9a;
+		background-color:transparent;
+		border-radius:10px; 
+		font-size: 1.8em;
+		color:#209a9a;
+		align-items: center;
+		text-align: center;
+		font-weight: 600;
+	    font-family: 'Montserrat', sans-serif;
+	    padding-top: 5%;
+	}
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+    
+    .pict2{
+		width:28%;
+		margin-left: 4%;
+		margin-top: 5%;
+		float:left;
+		height:300px;
+		display :grid;
+	    grid-template-rows: 5fr 2fr;
+    }
+}

@@ -1,0 +1,265 @@
+/************************************LOGIN**************************************************/
+.loginContainer{
+        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        grid-template-rows:12% 10% 56% 10% 12%;
+        display:grid;	
+}
+
+.loginHeaderText{
+	font-size:3em;
+}
+
+.loginHeader{
+    width:100%;
+    text-align: center;
+}
+
+.alert{
+	position:absolute;
+	width :30%;
+	height: 130px;
+	margin-top:6%;
+	margin-left: 35%;
+	border-radius: 7px;
+	font-size: 2.4em;
+	text-align: center;
+	padding-top: 3%; 
+}
+
+.loginFormArea{ 
+	width:40%;
+	height: 90%;
+	margin:0 30%;
+	display : grid;
+	grid-template-rows: 2fr 2fr 1fr ;
+}
+
+.loginInput::-webkit-input-placeholder {
+  color: grey;
+}
+
+.loginInput{
+	width: 90%;
+	margin: 0 5%;
+	border: 1px solid black;
+	font-size  : 1.8em;
+	max-height : 50px;
+    padding-left : 3%;   
+}
+
+.loginLabel{
+	font-size: 1.6em;
+	width: 90%;
+	margin: 5% 5%;
+	max-height : 50px;
+}
+.logLabCont{
+	display:grid;
+	grid-template-rows: 50% 50%;
+}
+
+.login_button{
+	width: 90%;
+    height: 60px;
+    margin: 4% 5%;
+    background-color: rgba(0,0,0,0.80);
+    font-size : 1.8em;
+    text-align: center;
+    font-weight: 300;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    border-radius: 7px;
+}
+
+.login_button:hover{
+	border:3px solid rgba(0,0,0,0.80);
+    background-color: white;
+    color: rgba(0,0,0,0.80);
+}
+
+.notMemberYet{
+	text-align: center;
+	align-self: center;
+	font-size: 1.4em;
+}
+
+.asterics{
+	color:red;
+}
+
+.alreadyMember{
+	font-size:3em;
+	text-align: center;
+    width: 90%;
+    
+    margin: 0 5%;
+}
+
+/***************************************REGISTER***********************************************/
+
+.registerContainer{
+        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        grid-template-rows:12% 10% 66% 12% ;
+        display:grid;
+}
+
+
+.registerHeader{
+    width:100%;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+.registerFormArea{
+	display:grid;
+	grid-template-columns:1fr 1fr;	
+}
+
+.formAreaLeft,.formAreaRight{
+     width:80%;
+    	display:grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.formAreaLeft{
+	margin-left:20%;
+}
+
+.registerLabel{
+	font-size: 1.4em;
+	width: 90%;
+	margin: 0 5%;
+    margin-bottom:1%;
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+
+.registerInput{
+	  width: 90%;
+	margin-left:5%;
+	border:1px solid black;
+	font-size: 1.4em;
+	max-height: 40px;
+}
+
+.registerLabelText{
+	width: 90%;
+	margin-left:5%;
+	align-content: bottom;
+    display:inline-block;
+}
+
+.registerButton{
+	 width: 90%;
+    height: 50px;
+    margin: 0 5%;
+    background-color: rgba(0,0,0,0.80);
+    font-size : 1.4em;
+    text-align: center;
+    font-weight: 300;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 7px;
+    color: white;
+}
+
+.registerButton:hover{
+	border:3px solid rgba(0,0,0,0.80);
+    background-color: white;
+    color: rgba(0,0,0,0.80);
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+    .loginHeaderText{
+	   font-size:2em;
+    }
+    .alert{
+		position:absolute;
+		width :30%;
+		height: 130px;
+		margin: 0 30%;
+		margin-top: 34%;
+		border-radius: 7px;
+		font-size: 2.4em;
+		text-align: center;
+		padding-top: 3%; 
+    }
+    .loginFormArea{ 
+		width:90%;
+		margin:0 5%;
+		display : grid;
+		grid-template-rows: 2fr 2fr 1fr ;
+    }
+
+.loginInput::-webkit-input-placeholder {
+  color: grey;
+}
+
+.loginInput{
+	width: 90%;
+	margin: 0 5%;
+	border: 1px solid black;
+	font-size  : 1.8em;
+	max-height : 50px;
+    padding-left : 3%;   
+}
+
+
+.login_button{
+	width: 90%;
+    height: 50px;
+}
+
+.notMemberYet{
+	text-align: center;
+	align-self: center;
+	font-size: 1.4em;
+}
+.registerFormArea{
+	display:grid;
+	grid-template-columns:1fr;
+	overflow-y: scroll;
+	margin-top: 5%;	
+}
+.formAreaLeft{
+	margin-left:10%;
+}
+.formAreaRight{
+	margin-left:10%;
+}
+.registerLabel{
+	margin-top:10%;
+}
+.registerHeader{
+    font-size: 2em;
+    align-content: center;
+}
+}
+
+@media (min-width: 501px) and (max-width: 1200px){
+	.loginHeaderText{
+	   font-size:1.5em;
+    }
+    .loginFormArea{ 
+		width:50%;
+		margin:0 25%;
+		
+    }
+}
+
+
+
+
+
+
+
+
+

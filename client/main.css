@@ -1,0 +1,730 @@
+/* CSS declarations go here    
+
+
+/*************************************NAVBAR***************************************/
+body{
+	 font-family: 'Montserrat', sans-serif;
+	 margin:0;
+	 padding:0;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+button{
+	outline:none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.barraTop{
+	width: 100%;
+	background-color: rgba(0,0,0,0.80);
+	height:100%;
+    display:grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    
+}
+
+.barraTopLeft{
+	width: 100%;
+	font-size:3em;
+	text-align:center;
+	color: white;
+}
+
+
+.barraTopCenter{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	text-align : center;
+	align-content   : center;
+	font-size: 1.6em;
+	font-family: 'Montserrat', sans-serif;
+    color : black;
+    
+}
+
+.linkColor{
+      color : white;
+}
+
+.linkColor:hover{
+      color : grey;
+}
+
+.linkColor2{
+      color : white;
+      font-size: 20px;
+}
+
+.linkColor2:hover{
+      color : grey;
+}
+
+.linkColor3{
+      color : red;
+      font-size: 100px;
+}
+
+.linkColor3:hover{
+      color : grey;
+}
+
+.barraTopRight{
+	width:100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 2fr;
+    align-content: center;   
+}
+
+.icon{
+	align-self: center;
+	justify-self:center;
+}
+
+.logoutText{
+   width: 100%;
+   text-align: center;
+   align-content: center;
+   padding-top: 5%;
+}
+
+.material-icons.md-36{ font-size: 36px; color: rgba(255, 255, 255, 1);}
+
+/*************************************MAIN CONTAINER*************************************/
+
+.mainContainer{
+	height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-rows:12% 10% 78%;
+    display:grid;
+}
+
+.componentsContainer{
+	margin:0;
+	padding:0;
+	width:100%;
+	height: 500px;
+	display: inline-block;
+}
+/*****************************************TEXT*********************************************/
+
+.title{
+	font-size: 2em;
+	text-align: center;
+}
+
+.paragraph{
+	font-size: 1.3em;
+	text-align: center;
+}
+
+/*************************************FIRST ROW*********************************************/
+
+.firstRow{
+	display:grid;
+	grid-template-columns: 53% 47%;
+	width: 90%;
+	margin:0 5%;
+	margin-bottom:0;
+	min-height: 900px;
+	margin-bottom: 4%;
+    
+	
+}
+
+.firstRowLeft{
+	display:grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.firstrow1{
+        	     
+                 margin-bottom:4%;
+                 margin-right: 3%;
+                 display      : grid;
+                 grid-template-columns : 50% 50%;
+                 background-color: #209a9a;
+                 color:white;
+                
+        }
+.firstrow2{
+        	     margin-bottom:4%;
+                 margin-right: 3%;
+                 display      : grid;
+                 grid-template-columns : 50% 50%;
+                 background-color: #209a9a;
+                 color:white;
+        }
+.firstrow3{
+        	     border       : 3px solid black;
+                 margin-right  : 3%;
+                 font-size: 3em;
+                 display      : grid;
+                 grid-template-columns:1fr;
+                 align-content: center;
+                 text-align: center;
+                 letter-spacing: 3px;
+                 background-color:#f2f2f2;
+
+        }
+
+.firstRowRight{
+	width: 100%;
+	display:grid;
+	grid-template-rows: 1fr;
+	background-image: url("https://i.pinimg.com/736x/d7/fe/eb/d7feeb08d6b01dbe030f996751b7ded2--modern-living-room-decor-modern-living-room-designs.jpg"  );
+    background-repeat: no-repeat;
+    background-size: auto;
+	position:relative;
+	z-index:1;
+    background-size: 100% 100%;
+}
+
+/*.firstRowRightIn{
+	z-index: 2;
+	background-color:rgba(30,30,30,0.8);
+	position: absolute;
+	width:100%;
+	height: 100%;
+    visibility:hidden; 
+    transition: all .3s ease;
+    transition-delay:.3s;
+}
+
+.firstRowRight:hover .firstRowRightIn{
+     visibility:visible;
+     
+}*/
+
+.title{
+	font-size: 2.5em;
+	align-items:bottom;
+}
+
+.firstRowText{
+	display: grid;
+	grid-template-rows:1fr;
+	align-items: center;
+}
+
+.b_u_t_t_o_n{
+	width: 60%;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin:0 20%;
+    text-align: center;
+    
+    font-size: 1.8em;
+    font-weight: 300;
+    text-decoration: none;
+    font-weight: 500;
+    border: 4px solid black;
+    color: black;   
+}
+
+.welcome{
+	font-size: 2.5em;
+	color:white;
+	text-align: center;
+}
+
+.welcomeDiv{
+	border:2px solid white;
+	border-radius:7px;
+	width: 90%;
+	margin: 25% 5%;
+	height: 50%;
+	display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+
+
+.welcomeText1{
+	font-size: 4em;
+    text-align: center;
+	color:white;
+}
+
+.welcomeText2{
+	font-size: 3em;
+    text-align: center;
+	color:white;
+}
+
+.welcomeText3{
+	font-size: 3em;
+    text-align: center;
+	color:white;
+}
+
+/************************************SECOND ROW*********************************************/
+
+.secondRow{
+	width:90%;
+	margin:0 5%;
+	margin-bottom: 4%;
+	background-color: black/*#19535F*/;
+	min-height: 300px;
+	padding-top: 4%;
+	
+}
+
+
+
+.subscribe{
+	font-size: 3em;
+	color:white;
+	letter-spacing: 4px;
+	text-align: center;
+
+}
+
+.subs_b_u_t_t_o_n{
+	width: 60%;
+    height: 60px;   
+    background-color: transparent;
+    border-radius: 10px;   
+    text-align: center;
+    margin-left: 5%;
+    font-size: 2em;
+    font-weight: 300;
+    text-decoration: none;
+    font-weight: 500;
+    border: 4px solid white;
+    color: white;
+    transition: all .3s ease;
+}
+
+.subs_b_u_t_t_o_n:hover{
+    background-color: white;
+    border: 4px solid white;
+    color: black;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+.subs_i_n_p_u_t{
+	 
+	width: 80%;
+    height: 60px; 
+    margin-left: 20%;
+    border: 4px solid white;
+    background-color: none;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    
+    outline: none;
+    
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    background-color: rgba(0,0,0,.15);
+    border-radius: 10px;	
+}
+/*****************************************THIRD ROW***************************************/
+.thirdRow{
+	display:grid;
+	grid-template-rows: 100%;
+	width: 90%;
+	margin:0 5%;
+	height: 500px;
+	border: 5px solid black;
+	margin-bottom:4%;
+	
+}
+
+.fixedImg{
+	background-image: url("http://jobbind.com/wp-content/uploads/2016/12/modern-living-rooms-with-sofa-and-cushion-and-carpet-and-white-table-and-tv-and-window-and-floor.jpg"  );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.divOnImg{
+	width:40%;
+	height:200px;
+	margin:10% 30%;
+	background-color:rgba(255,255,255,0.60);
+	display:grid;
+	grid-template-rows:1fr  1fr;
+	font-size: 200%;
+	color:black;
+	text-align: center;
+	align-items:center;
+	border-radius:10px;
+}
+
+.borderDiv{
+	width:94%;
+	height:80%;
+	border:4px solid black;
+	border-radius:7px;
+	margin: 3% 3%;
+}
+/******************************************FOURTH ROW*************************************/
+
+.oneProductDetails{
+    width:100%;
+	display :grid;
+	grid-template-rows: 2fr 2fr ;
+	color:white;
+	background-color:#209a9a;
+    height: 100%;
+}
+.fourthRow{
+	
+	width:90%;
+	margin:0 5%;
+	display:grid;
+	grid-template-rows: 25% 75%;
+	margin-bottom: 4%;
+	height: 700px;
+}
+
+.fourthRowHeader{
+	
+	width:100%;
+	text-align: center;
+	align-items: center;
+	display : grid;
+	grid-template-rows: 1fr;
+	font-size: 3.5em;
+	font-weight: 700;
+	letter-spacing: 7px;
+}
+
+.fourthRowBody{
+	
+	width:100%;
+	display:inline-block;
+	height: 100%;
+}
+
+.pict{
+	width:20%;
+	margin-left:4%;
+	float:left;
+	height:80%;
+	display :grid;
+    grid-template-rows: 5fr 2fr;
+}
+
+.littleFooter{
+    color:white;
+	background-color:#209a9a;
+	text-align: center;
+	align-content: center;
+	font-size: 2em;
+	display:grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.littleFooterTop{
+    
+	display:grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.proof2{
+	z-index: 2;
+	background-color:rgba(250,250,250,0.80);
+	position: absolute;
+	width:100%;
+	height: 100%;
+    visibility:hidden;
+    transition: all .5s ease;
+
+}
+
+.essentials{
+     width:100%;
+     height: 100%; 
+}
+.essentials:hover .proof2{
+     visibility:visible; 
+}
+
+.opacityGreen{
+	width:50%;
+	height:60px;
+	margin: 40% 25%;
+	border:4px solid #209a9a;
+	background-color:transparent;
+	border-radius:10px; 
+	font-size: 1.8em;
+	color:#209a9a;
+	align-items: center;
+	text-align: center;
+	font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3%;
+}
+
+
+
+.addGreen{
+	width:20%;
+	height:40px;
+	margin: 0 40%;
+	border:2px solid white;
+	background-color:transparent;
+	border-radius:10px;
+	font-size: 0.9em;
+	color:white;
+	outline:none;
+}
+
+.oneProductDetailsBottom{
+    display : grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-content: center;
+	justify-content: center;
+
+}
+/*********************************FOOTER********************************************/
+
+.f_o_o_t_e_r{
+	height: 100%;
+
+	
+	width: 100%;
+	background-color: rgba(0,0,0,0.80);
+	font-family: 'Montserrat', sans-serif;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.f_o_o_t_e_r2{
+	height: 100px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.80);
+	font-family: 'Montserrat', sans-serif;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footerText{
+	display:grid;
+	grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+	
+	font-size: 1.2em;
+    
+    color : white;
+    
+}
+
+.footerTextLeft{
+	display:grid;
+	grid-template-columns: 1fr 5fr;
+	
+}
+
+.footerTextLeftIn{
+    text-align:left;
+    margin-left: 5%;
+}
+
+.footerIcon{
+     text-align: right;
+}
+
+.footerTextMiddle{
+	
+	text-align: center;
+	align-self: center;
+	
+}
+
+
+@media only screen and (max-width: 500px) {
+	.barraTopRight{
+        display:none;
+    }
+    .linkColor{
+    	display:none;
+    }
+    .addToCartButton2{
+    	display:none;
+    }
+    .oneProductDetails{
+    	font-size: 0.6em;
+    }
+	.title{
+        font-size: 1.5em;
+	}
+    .oneProductDetailsBottom{
+    	text-align:center;
+    	display:inline-block;
+    }
+    .price{
+    	text-align: center;
+
+    }
+	.paragraph{
+		font-size: 0.9em;
+		margin-top: 20%;
+	}
+
+	.firstRowRight{
+	   display:none;
+    }
+
+    .firstRowLeft{
+	   width: 100%;
+    }
+
+    .firstRow{
+		display:grid;
+		grid-template-columns: 1fr;
+		margin-bottom:0;
+		margin-right: 0;
+		min-height: 600px;
+    }
+
+    .firstrow1{
+	     height: 200px;
+	     margin-left: 0;
+	     margin: 2% 0;
+	     width:100%;
+	}
+
+    .firstrow2{
+	     height: 200px;
+	     
+	     margin-right: 0;
+	     width:100%;
+    }
+
+    .firstrow3{
+	     height: 200px;
+	     width:100%;
+	     font-size: 1.3em;
+	     margin-right: 0;
+    }
+
+    .firstRowText{
+	    height: 50%;
+	    width:100%;
+    }
+    
+
+    .thirdRow{
+			height: 200px;
+            width:90%;		
+    }
+    .divOnImg{
+			width:60%;
+			height:40%;
+			margin:15% 20%;
+			grid-template-rows:1fr  1fr;
+			font-size: 0.7em;
+    }
+    .fourthRow{
+		width:100%;
+		margin:0 5%;
+		display:inline-block;
+		height: 650px;
+		margin-bottom: 4%;
+		align-content: center;
+    }
+
+    .fourthRowHeader{
+		width:90%;
+		margin:0 5%;
+		height: 100px;
+		font-size: 1.8em;
+		font-weight: 700;
+		letter-spacing: 7px;
+    }
+    .fourthRowBody{
+	    width:100%;
+		
+		display:inline-block;
+    }
+    .essentials{
+        margin-top:4%;
+    }
+    .secondRow{
+	    display:none;
+     } 
+    .footerTextLeft{
+		display:none;
+	}
+    .f_o_o_t_e_r{
+		display:grid;
+		grid-template-columns: 1fr;
+    }
+    .pict{
+    	width:40%;
+    	margin-top:6%;
+    	margin-left: 3%;
+    	height: 35%;
+    	float:left;
+    }
+    .opacityGreen{
+		width:60%;
+		height:40px;
+		margin: 40% 20%;
+		border:3px solid #209a9a; 
+		font-size: 1.2em;
+	    padding-top: 5%;
+    }
+}
+
+
+@media (min-width: 501px) and (max-width: 1198px) { 
+    
+    .firstRowRight{
+	   display:none;
+    }
+    .firstRowLeft{
+	   width: 100%;
+
+    }
+    .firstRow{
+	display:grid;
+	grid-template-columns: 1fr;
+	width: 90%;
+	margin:0 5%;
+	margin-bottom:0;
+	min-height: 900px;
+	margin-bottom: 4%;
+    }
+    .opacityGreen{
+		width:60%;
+		height:60px;
+		margin: 20% 20%;
+		border:3px solid #209a9a; 
+		font-size: 1em;
+	    padding-top: 2%;
+    }
+    .firstrow3{
+	     height: 200px;
+	     width:100%;
+	     font-size: 1.7em;
+	     margin-right: 0;
+    }
+        .divOnImg{
+	width:60%;
+	height:200px;
+	margin:10% 20%;
+	font-size: 1.7em;
+	}
+}
+
