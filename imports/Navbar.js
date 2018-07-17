@@ -9,27 +9,23 @@ export default class Navbar extends React.Component{
 	
    constructor(){
    	super()
-   	//this.cartCheck = this.cartCheck.bind(this)
-   	//this.logout = this.logout.bind(this)
    	this.state = {
-   		    login    : false,
-   	   	  logout   : 'none',
-   	      cart     : true,
-          active   : false,
-          dropVisi : 'hidden',
-         transform:'rotate(100deg)',
-           logged:true,
-         open:false
+           login    : false,
+   	   logout   : 'none',
+   	   cart     : true,
+           active   : false,
+           dropVisi : 'hidden',
+           transform:'rotate(100deg)',
+           logged   : true,
+           open     : false
    }}
 //********************************************************************************
-   componentWillMount(){
-
-   	   Tracker.autorun( () =>{
-
-   	   	   let cart   = Cart.find({}).fetch()
-   	   	   this.cartCheck.bind(this)
-           let logout
-           let login
+componentWillMount(){
+   Tracker.autorun( () =>{
+      let cart   = Cart.find({}).fetch()
+      this.cartCheck.bind(this)
+      let logout
+      let login
 
            Meteor.call('loggedCheck',(error,data)=>{
                if( data === 'logged'){
@@ -41,87 +37,74 @@ export default class Navbar extends React.Component{
              }
              this.setState({cart,logout,login})
            })
-           
-   	   	  
-   	   })
-       
-   }
-
-   componentDidMount(){
-    
-   }
-
+           })
+}
 //********************************************************************************
 
-   handleClick (){
-     if( this.state.open === false){
-         this.setState({
-                        transform : 'rotate(-100deg)',
-                        open      : true,
-                        dropVisi : 'visible'
-                    })
+handleClick (){
+	if( this.state.open === false){
+	 this.setState({
+			transform : 'rotate(-100deg)',
+			open      : true,
+			dropVisi : 'visible'
+		    })
+	}else{
+	 this.setState({
+			transform : 'rotate(100deg)',
+			open      : false,
+			dropVisi  : 'hidden'
+		    })
+	}
+}
+
+loginCheck = () => {
+     if(this.state.login===true){
+	this.props.history.push({
+	       pathname:'/user/page'
+	})
      }else{
-         this.setState({
-                        transform : 'rotate(100deg)',
-                        open      : false,
-                        dropVisi  : 'hidden'
-                    })
+	this.props.history.push({
+	       pathname:'/login'
+	})
      }
-   }
+}
 
-   loginCheck = () => {
-             if(this.state.login===true){
-             	this.props.history.push({
-	         	                       pathname:'/user/page'
-	         	                       //state   : {user       : this.state.user,
-                                   //userId     : this.state.logged
-	         	                       
-		         	             })
-             }else{
-             	this.props.history.push({
-             		                   pathname:'/login'
-             	})
-             }
-   }
+cartCheck = () => {
 
-   cartCheck = () => {
-
-   	let length = this.state.cart.length
-	       if(length >0 ){
-	       	        this.props.history.push({pathname:'/fullcart'})
-	       }else{
-	       	        this.props.history.push({pathname:'/emptycart'})
-	       }
-   }
+let length = this.state.cart.length
+       if(length >0 ){
+	this.props.history.push({pathname:'/fullcart'})
+       }else{
+	this.props.history.push({pathname:'/emptycart'})
+       }
+}
 //*********************************************************************************
 
 
-    logout = () => {
-          Meteor.logout( (err,data) => {
-                  
-                  if(err){
-                  	console.log(err)
-                  }else{
-                  	//  alert('logout')
-                  	this.props.history.push({pathname:'/login'})
-                  	this.setState({logout:'none',login:false})
-                  }
-          })
-    }
+logout = () => {
+  Meteor.logout( (err,data) => {
+  if(err){
+	console.log(err)
+  }else{
+	this.props.history.push({pathname:'/login'})
+	this.setState({logout:'none',login:false})
+  }
+  })
+}
 
 //*********************************************************************************    
 	
 
   
-  render(){
+render(){
 
-		let logout = {
-			display    :  this.state.logout,
-			fontSize   : '0.8em',
-			color      : 'white'
-		}
+    let logout = {
+	display    :  this.state.logout,
+	fontSize   : '0.8em',
+	color      : 'white'
+    }
     let dropHamb = {
-            visibility:this.state.dropVisi
+         visibility:this.state.dropVisi
     }
     let burger = {
       each: {
@@ -171,10 +154,7 @@ export default class Navbar extends React.Component{
                      <Link className = 'linkColor' to ='/about'>About</Link>
                      <Link className = 'linkColor' to ='/catalogue'>Catalogue</Link>
 
-
-
-                      
-                  </div>
+                   </div>
 
                    <div className = 'barraTopRight'>
                       
@@ -200,8 +180,8 @@ export default class Navbar extends React.Component{
                    </div>
 
              </div>
-			  )
-	}
+	 )
+    }
 }
 
 
