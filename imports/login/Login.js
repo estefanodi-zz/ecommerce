@@ -1,7 +1,7 @@
 import React  from 'react'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
-import Alert from 'react-s-alert'
+import Alert  from 'react-s-alert'
 import 'react-s-alert/dist/s-alert-default.css'
 
 export default class Login extends React.Component{
@@ -39,8 +39,6 @@ export default class Login extends React.Component{
 
 //********************************************************************************
 
-
-//********************************************************************************
     handleSubmit = (e) =>{
          e.preventDefault()
 
@@ -69,10 +67,7 @@ export default class Login extends React.Component{
                      })
 
                       setTimeout( ()=>{this.props.history.push({pathname:'/'})},3000)
-                      
-
-                 // this.props.history.push({pathname:'/'})      
-              }//personsearchshopping_cart
+              }
               this.setState({email:'',password:''})
         })
 ) 
@@ -87,20 +82,18 @@ export default class Login extends React.Component{
     render(){
         
         let visibility = { 
-                           visibility      : this.state.visibility,
-                           color           : this.state.color,
-                           border          : this.state.border,
-                           backgroundColor : this.state.background
+           visibility      : this.state.visibility,
+           color           : this.state.color,
+           border          : this.state.border,
+           backgroundColor : this.state.background
                          }
 
     return(
               <div className = 'loginContainer'>
                    <Navbar history = { this.props.history }/>
-
-                   
-                         <div className = 'loginHeader'><p
-                                                        className='loginHeaderText'
-                                                   >Already member?</p></div>
+                      <div className = 'loginHeader'><p
+                            className='loginHeaderText'
+                       >Already member?</p></div>
                          <div  style     = {visibility}
                                className = 'alert'>{this.state.message}</div>
                          
