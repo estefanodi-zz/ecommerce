@@ -72,50 +72,37 @@ export default class FullCart extends React.Component{
                     <Navbar
                         history = {this.props.history}
                     />
-                       
-                        
+                      <div className = 'fullCartHeader'>
+			  <div className='yCart'>Your Cart</div>
 
-		                    <div className = 'fullCartHeader'>
-		                          <div className='yCart'>Your Cart</div>
-		                          
-		                          <div><button className = 'still_button'
-		                                  onClick   = { ()=>this.props.history.push({pathname:'/catalogue'})}
-		                          >Shop</button></div>
+			  <div><button className = 'still_button'
+				  onClick   = { ()=>this.props.history.push({pathname:'/catalogue'})}
+			  >Shop</button></div>
 
-		                          <div><button className = 'checkout_button'
-                                          onClick = { ()=>this.props.history.push({
-                                          	                                 pathname:'/checkout',
-                                                                             state   : { total: this.state.total }                                            
-                                                    })}
-		                          >Checkout</button></div>
+			  <div><button className = 'checkout_button'
+			  onClick = { ()=>this.props.history.push({
+						pathname:'/checkout',
+				                state   : { total: this.state.total }                                            
+				    })}
+			  >Checkout</button></div>
 
-		                          <div    className = 'total'>
-                                          
-                                         Total € {CalculateTotal(Cart)}
-		                          </div>
-		                    </div>
+			  <div    className = 'total'>
 
+			 Total € {CalculateTotal(Cart)}
+			  </div>
+		    </div>
 
+		     <div className = 'fullCart'>
 
+		       <FullCartList
+		    cart           = { this.state.cart     }
+		    removeFromCart = { this.removeFromCart }
+		    updateCart     = { this.updateCart     }
+		    changeQuantity = { this.changeQuantity }
 
-
-		                    <div className = 'fullCart'>
-		                       
-		                       <FullCartList
-                                    cart           = { this.state.cart     }
-                                    removeFromCart = { this.removeFromCart }
-                                    updateCart     = { this.updateCart     }
-                                    changeQuantity = { this.changeQuantity }
-                                    
-		                       />  	
-		                    
-		                          
-		                          
-
-		                      
-		                    </div>
-		                  
-		                  <Footer/>
+		       />  	
+		                 </div>
+		          <Footer/>
                </div>
 			  )
 	}
