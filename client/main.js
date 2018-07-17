@@ -5,17 +5,12 @@ import Main from '../imports/Main.js';
 
 Meteor.startup(() => {
         render(
-
-                     <Main />, 
-                document.getElementById('app')
-                
-        )
+               <Main />, 
+               document.getElementById('app')
+       )
 });
 
 
 $.cloudinary.config({
         cloud_name:"estefanodi2009"
 })
-
-
-//Meteor.subscribe('products')
