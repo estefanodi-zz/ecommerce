@@ -116,70 +116,68 @@ render(){
       }
     }
 		
-		return(
-             <div  className = 'barraTop'>
-               
-                   <div className = 'barraTopLeft'>
-                         <div style={dropHamb} className='dropHamb'>
-                            
-                            <Link className = 'linkColor2' to ='/'>Home</Link>
-                            <Link className = 'linkColor2' to ='/about'>About</Link>
-                            <Link className = 'linkColor2' to ='/catalogue'>Catalogue</Link>
-                            <Link className = 'linkColor2' to ='/about'>User</Link>
-                            <Link className = 'linkColor2' to ='/catalogue'>Cart</Link>
-                            
-                        </div>
+return(
+	<div  className = 'barraTop'>
 
-                        <div className= "hamburguer">
-                          <div
-                          style    = {burger.main} 
-                          onClick  = {this.handleClick.bind(this)} 
-                          className= "mainBurger">
-                            <div 
-                              style={burger.each}
-                              className="burger"></div>
-                            <div 
-                              style={burger.each}
-                              className="burger"></div>
-                            <div 
-                              style={burger.each}
-                              className="burger"></div>
-                        </div>
-                        </div>
-                   </div>
-                   
-                   <div className = 'barraTopCenter '>
+	   <div className = 'barraTopLeft'>
+		 <div style={dropHamb} className='dropHamb'>
 
-                     <Link className = 'linkColor' to ='/'>Home</Link>
-                     <Link className = 'linkColor' to ='/about'>About</Link>
-                     <Link className = 'linkColor' to ='/catalogue'>Catalogue</Link>
+		    <Link className = 'linkColor2' to ='/'>Home</Link>
+		    <Link className = 'linkColor2' to ='/about'>About</Link>
+		    <Link className = 'linkColor2' to ='/catalogue'>Catalogue</Link>
+		    <Link className = 'linkColor2' to ='/about'>User</Link>
+		    <Link className = 'linkColor2' to ='/catalogue'>Cart</Link>
 
-                   </div>
+		</div>
 
-                   <div className = 'barraTopRight'>
-                      
-                           
-                           
-                           <div className ='icon'>
-                                 <i className = "material-icons md-36 "
-                                    onClick   = {this.loginCheck.bind(this)}
-                                 >person</i>
-                           </div>
-                       
-                           <div className = 'icon iconCart'>
-                                <i className = "material-icons md-36"
-                                   onClick   = {this.cartCheck.bind(this)}
-                                >shopping_cart</i>
-                           </div>
+		<div className= "hamburguer">
+		  <div
+		  style    = {burger.main} 
+		  onClick  = {this.handleClick.bind(this)} 
+		  className= "mainBurger">
+		    <div 
+		      style={burger.each}
+		      className="burger"></div>
+		    <div 
+		      style={burger.each}
+		      className="burger"></div>
+		    <div 
+		      style={burger.each}
+		      className="burger"></div>
+		</div>
+		</div>
+	   </div>
 
-                           <div className ='logoutText'><p 
-                                onClick   = { this.logout.bind(this) }
-                                style     = {logout}>Logout</p>
-                           </div>
-   
-                   </div>
+	   <div className = 'barraTopCenter '>
 
-             </div>
+	     <Link className = 'linkColor' to ='/'>Home</Link>
+	     <Link className = 'linkColor' to ='/about'>About</Link>
+	     <Link className = 'linkColor' to ='/catalogue'>Catalogue</Link>
+
+	   </div>
+
+	   <div className = 'barraTopRight'>
+
+                   <div className ='icon'>
+			 <i className = "material-icons md-36 "
+			    onClick   = {this.loginCheck.bind(this)}
+			 >person</i>
+		   </div>
+
+		   <div className = 'icon iconCart'>
+			<i className = "material-icons md-36"
+			   onClick   = {this.cartCheck.bind(this)}
+			>shopping_cart</i>
+		   </div>
+
+		   <div className ='logoutText'><p 
+			onClick   = { this.logout.bind(this) }
+			style     = {logout}>Logout</p>
+		   </div>
+
+	   </div>
+
+	</div>
 	 )
     }
 }
