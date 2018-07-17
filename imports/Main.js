@@ -22,11 +22,6 @@ import AdminUsersMain    from '../imports/admin/AdminUsersMain'
 import AdminOrdersMain   from '../imports/admin/AdminOrdersMain'
 import OrderDetails      from '../imports/admin/OrderDetails'
 
-// The Main component renders one of the three provided
-// Routes (provided that one matches). Both the /roster
-// and /schedule routes will match any pathname that starts
-// with /roster or /schedule. The / route will only match
-// when the pathname is exactly the string "/"
 const Main = () => (
   <BrowserRouter>
 
@@ -61,16 +56,3 @@ const Main = () => (
 
 export default Main
 
-//
-
-
-  //<Route path='/admin/add_product'     component={AddProduct}/>
-       //<Route path='/admin/show_user'       component={ShowUser}/>
-      //<Route path='/admin/show_products'   component={ShowProducts}/>
-      //<Route path='/admin/show_categories' component={ShowCategories}/>
-      // <Route path='/admin/show_one_product' component={ShowOneProduct}/>
-
-      //<Route path='/usermain'              component={UserMain}/>
-      //<Route path='/user/chat'             component={UserChat}/>
-      //<Route path='/user/favourite'        component={UserFavourite}/>
-      //<Route path='/user/orders'           component={UserOrders}/>
